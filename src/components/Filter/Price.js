@@ -1,5 +1,6 @@
 import React from 'react';
 import { Slider } from 'antd';
+import styles from './Price.module.css'
 
 export default function Price(props) {
     const onChange = (value) => {
@@ -18,7 +19,10 @@ export default function Price(props) {
                 onChange={onChange}
                 onAfterChange={onAfterChange} />
             <div>
-                <span>$35</span> - <span>$250</span>
+                <p >
+                    <span className={styles.price}>$35 - $250</span>
+                </p>
+                <button className={styles.btn}>Filter</button>
             </div>
 
         </>

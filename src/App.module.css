@@ -1,0 +1,17 @@
+.container {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 270px 1fr;
+}
+.filter {
+    width: 100%;
+ 
+}
+.content {
+
+
+}

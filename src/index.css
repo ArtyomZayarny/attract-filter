@@ -1,5 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
 ul {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+span,p {
+  font-weight: 400;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
 }
