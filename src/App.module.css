@@ -5,13 +5,9 @@
 }
 .wrapper {
     display: grid;
-    grid-template-columns: 270px 1fr;
+    grid-template-columns: 240px 1fr;
 }
 .filter {
     width: 100%;
  
-}
-.content {
-
-
 }

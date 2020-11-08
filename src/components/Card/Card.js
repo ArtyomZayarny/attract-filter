@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
 import styles from './Card.module.css';
-import back from '../../img/pic_1.png';
 import PropTypes from 'prop-types';
 
 Card.propTypes = {
@@ -44,7 +42,6 @@ export default function Card(props) {
         if (!data.id) {
             setData({ ...data, id, city, cityId, name, pic, category, categoryId, price })
         }
-
 
     }, []);
 

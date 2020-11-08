@@ -1,3 +1,5 @@
+@import '../../vars.css';
+
 .category {
     margin-bottom: 60px;
 }
@@ -7,4 +9,8 @@
     font-size: 15px;
     margin-bottom: 20px;
     margin-left: 0;
+}
+.amount {
+ margin-left: 10px;
+ color:var(--gray);
 }
