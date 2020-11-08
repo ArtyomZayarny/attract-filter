@@ -1,0 +1,62 @@
+@import '../../vars.css';
+.card {
+    width: 100%;
+    max-width: 270px;
+    border:1px solid var(--gray);
+    transition: all .3s ease;
+}
+
+.back {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 26% 50%;
+}
+.card:hover {
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+.card:hover .inner {
+    background-color: rgba(28,184,255,0.7);
+}
+.inner {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    background-color:transparent;
+}
+
+.priceArea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    height: 75px;
+    min-height: 75px;
+    overflow-y: hidden;
+}
+.location {
+    color:var(--white);
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+}
+.content {
+    padding: 20px;
+}
+.category {
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    color:var(--gray);
+}
+.price {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
