@@ -6,25 +6,44 @@ import styles from './Category.module.css';
 
 export default function Category(props) {
     const [data, setData] = useState({
-        cards
+        categories: [],
+        selected: []
     });
-
-    useEffect(() => {
-        if (data.cards.length === 0) {
-            setData({ ...data, cards })
-        }
-
-    }, [data.cards])
-
     const getAmount = (id, arr) => {
-        console.log(id, arr)
         const result = arr.filter(item => item.id === id);
         return result.length
     }
 
+    useEffect(() => {
+
+        if (data.categories.length === 0) {
+            const cardsWithAmount = Categories.map((item, index, arr) => {
+                let amount = getAmount(item.id, cards);
+                item.amount = amount;
+                return item
+            })
+            setData({ ...data, categories: cardsWithAmount })
+        }
+
+    }, [])
+
+
+
     const onChange = (obj) => {
-        const { name, checked } = { ...obj.target };
-        console.log(name, checked)
+        let selected = [...data.selected];
+        const { checked, id } = { ...obj.target };
+        if (checked) {
+            if (!selected.includes(id)) {
+                selected.push(id);
+                setData({ ...data, selected })
+            }
+        } else {
+            if (data.selected.length > 0) {
+                let selected = data.selected.filter(ID => ID !== id);
+                setData({ ...data, selected })
+            }
+        }
+
     }
 
 
@@ -32,12 +51,17 @@ export default function Category(props) {
         <div className={styles.category}>
             <h3>Categories </h3>
             <ul>
-                {data.cards.length > 0 && Categories.map(category => <li key={category.id}>
+                {data.categories.length > 0 && data.categories.map(category => <li key={category.id}>
                     <Checkbox
+                        id={category.id}
                         name={category.name}
                         className={styles.checkItem}
                         onChange={onChange}
-                    >{category.name}<span className={styles.amount}>{`(${getAmount(category.id, data.cards)})`}</span></Checkbox></li>)}
+                        checked={data.selected.includes(category.id) ? true : false}
+                    >
+                        {category.name}<span className={styles.amount}>{category.amount}</span>
+                    </Checkbox>
+                </li>)}
             </ul>
         </div>
     )
