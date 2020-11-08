@@ -5,10 +5,8 @@ import Price from '../components/Filter/Price';
 
 export default function Filter(props) {
 
-
     return (
         <div className="filter">
-            <h2>Filter</h2>
             <City />
             <Category />
             <Price />

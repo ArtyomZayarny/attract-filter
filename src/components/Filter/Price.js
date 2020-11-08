@@ -13,18 +13,18 @@ export default function Price(props) {
 
 
     return (
-        <>
+        <div className={styles.price}>
             <h3>Price</h3>
-            <Slider style={{ width: 120 }} range defaultValue={[20, 50]}
+            <Slider className={styles.slider} range defaultValue={[20, 50]}
                 onChange={onChange}
                 onAfterChange={onAfterChange} />
-            <div>
+            <div className={styles.btnArea}>
                 <p >
-                    <span className={styles.price}>$35 - $250</span>
+                    <span className={styles.amount}>$35 - $250</span>
                 </p>
                 <button className={styles.btn}>Filter</button>
             </div>
 
-        </>
+        </div>
     )
 }
