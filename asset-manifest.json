@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/attract-filter/static/css/main.e49d0c18.chunk.css",
+    "main.js": "/attract-filter/static/js/main.a4e84426.chunk.js",
+    "main.js.map": "/attract-filter/static/js/main.a4e84426.chunk.js.map",
+    "runtime-main.js": "/attract-filter/static/js/runtime-main.48533805.js",
+    "runtime-main.js.map": "/attract-filter/static/js/runtime-main.48533805.js.map",
+    "static/css/2.617c3bb8.chunk.css": "/attract-filter/static/css/2.617c3bb8.chunk.css",
+    "static/js/2.2b57dada.chunk.js": "/attract-filter/static/js/2.2b57dada.chunk.js",
+    "static/js/2.2b57dada.chunk.js.map": "/attract-filter/static/js/2.2b57dada.chunk.js.map",
+    "index.html": "/attract-filter/index.html",
+    "static/css/2.617c3bb8.chunk.css.map": "/attract-filter/static/css/2.617c3bb8.chunk.css.map",
+    "static/css/main.e49d0c18.chunk.css.map": "/attract-filter/static/css/main.e49d0c18.chunk.css.map",
+    "static/js/2.2b57dada.chunk.js.LICENSE.txt": "/attract-filter/static/js/2.2b57dada.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.48533805.js",
+    "static/css/2.617c3bb8.chunk.css",
+    "static/js/2.2b57dada.chunk.js",
+    "static/css/main.e49d0c18.chunk.css",
+    "static/js/main.a4e84426.chunk.js"
+  ]
+}
