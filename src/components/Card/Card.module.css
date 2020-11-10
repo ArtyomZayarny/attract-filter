@@ -1,7 +1,9 @@
 @import '../../vars.css';
 .card {
     width: 100%;
+    display: grid;
     max-width: 270px;
+    height: 320px;
     border:1px solid var(--gray);
     transition: all .3s ease;
 }
@@ -48,6 +50,9 @@
 }
 .content {
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 .category {
     font-family: 'Raleway', sans-serif;

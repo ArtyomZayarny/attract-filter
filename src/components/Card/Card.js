@@ -34,10 +34,6 @@ export default function Card(props) {
         price: null,
     })
 
-
-
-
-
     useEffect(() => {
         if (!data.id) {
             setData({ ...data, id, city, cityId, name, pic, category, categoryId, price })
